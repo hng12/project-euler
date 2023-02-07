@@ -3,10 +3,10 @@ def esieve(n):
     multiples = []
     for i in range(2, n+1):
         if i not in multiples:
+            print(i)
             primes.append(i)
-            if len(primes) == 10001:
-                break
             for j in range(i*i, n+1, i):
                 multiples.append(j)
     return(primes)
-#ok
+
+print(sum(esieve(10)))

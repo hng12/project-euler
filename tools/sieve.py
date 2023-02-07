@@ -9,4 +9,3 @@ def esieve(n):
                 multiples.append(j)
     return(primes)
 
-esieve(212)
